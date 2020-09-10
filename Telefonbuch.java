@@ -6,7 +6,7 @@
 public class Telefonbuch
 {
     // Bezugsobjekte
-
+    
     // Attribute
 
     // Konstruktor
@@ -16,5 +16,6 @@ public class Telefonbuch
     }
 
     // Dienste
+    
 
 }
