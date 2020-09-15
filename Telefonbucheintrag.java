@@ -16,7 +16,12 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
     {
         
     }
-
+    
+    public Telefonbucheintrag(String nachname)
+    {
+        this.nachname = nachname;
+    }
+    
         public boolean isGreater (Telefonbucheintrag pContent)
     {
         if(pContent.getContent().compareTo(this.name) < 0)
@@ -53,9 +58,9 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
         }
     }
     
-        public String getContent()
+    public String getContent()
     {
-        return this.name;
+        return this.nachname;
     }    
     
     public String gibVorname()

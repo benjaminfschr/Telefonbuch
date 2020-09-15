@@ -13,23 +13,23 @@ public class Telefonbuch
     // Konstruktor
     public Telefonbuch()
     {
-
+        bst= new BinarySearchTree ();
     }
 
     // Dienste
     public void eintragHinzufuegen(Telefonbucheintrag eintrag)
     {
-    
+        bst.insert(eintrag);
     }
     
     public void eintragLoeschen(Telefonbucheintrag eintrag)
     {
-    
+        bst.remove(eintrag);
     }
     
     public Telefonbucheintrag sucheEintrag(String nachname)
     {
-        return Telefonbucheintrag;
+        return bst.search();
     }
     
     public void aendereAuftrag(Telefonbucheintrag alt, Telefonbucheintrag neu)
