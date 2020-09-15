@@ -18,7 +18,7 @@ public class Telefonbuch
 
     // Dienste
     /** Übergebener Eintrag wird mit der im BST integrierten Methode im BST gespeichert
-    **/
+      **/
     public void eintragHinzufuegen(Telefonbucheintrag eintrag)
     {
     
@@ -26,15 +26,15 @@ public class Telefonbuch
     
     /** Zuerst wird im BST nach dem zu löschenden Eintrag gesucht (sucheEintrag())
       * Ist der Eintrag gefunden wird er entfernt
-    **/
+      **/
     public void eintragLoeschen(Telefonbucheintrag eintrag)
     {
     
     }
     
     /** Im BST wird nach einem Eintrag gesucht
-      * Auf jedem Level wird der Nachname überprüft und die Methoden isGreater() und isLess() angewandt
-    **/
+     *  Auf jedem Level wird der Nachname überprüft und die Methoden isGreater() und isLess() angewandt
+     **/
     public Telefonbucheintrag sucheEintrag(String nachname)
     {
         return Telefonbucheintrag;
@@ -75,6 +75,9 @@ public class Telefonbuch
     
     }
     
+    /** Eingabe wird überprüft, und alle Einträge die mit der aktuellen Eingabe anfangen werden ausgegeben
+     * z.B. Man gibt As ein und ausgegeben werden "Aslan", "Assman" u.s.w., bei f "Fischer", "Flötenheinrich" u.s.w.
+       **/
     public void gibVorschlagsliste(Telefonbucheintrag eintrag)
     {
         
