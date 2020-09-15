@@ -13,7 +13,7 @@ public class Telefonbuch
     // Konstruktor
     public Telefonbuch()
     {
-
+        bst= new BinarySearchTree ();
     }
 
     // Dienste
@@ -21,7 +21,7 @@ public class Telefonbuch
       **/
     public void eintragHinzufuegen(Telefonbucheintrag eintrag)
     {
-    
+        bst.insert(eintrag);
     }
     
     /** Zuerst wird im BST nach dem zu löschenden Eintrag gesucht (sucheEintrag())
@@ -29,7 +29,7 @@ public class Telefonbuch
       **/
     public void eintragLoeschen(Telefonbucheintrag eintrag)
     {
-    
+        bst.remove(eintrag);
     }
     
     /** Im BST wird nach einem Eintrag gesucht
@@ -37,7 +37,7 @@ public class Telefonbuch
      **/
     public Telefonbucheintrag sucheEintrag(String nachname)
     {
-        return Telefonbucheintrag;
+        return bst.search(new Telefonbucheintrag (nachname));
     }
     
     /** Zuerst wird der alte Eintrag gelöscht (eintragLoeschen), anschließend der neue eingefügt (eintragHinzufuegen) 
