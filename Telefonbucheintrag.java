@@ -3,7 +3,7 @@
  * @author 
  * @version 
  */
-public class Telefonbucheintrag
+public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
 {
     // Bezugsobjekte
     private List<Integer> nummern;
@@ -16,6 +16,47 @@ public class Telefonbucheintrag
         
     }
 
+        public boolean isGreater (Telefonbucheintrag pContent)
+    {
+        if(pContent.getContent().compareTo(this.nachname) < 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    public boolean isLess (Telefonbucheintrag pContent)
+    {
+        if(pContent.getContent().compareTo(this.nachname) > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public boolean isEqual (Telefonbucheintrag pContent)
+    {
+        if(pContent.getContent().compareTo(this.nachname) == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    
+    public String getContent()
+    {
+        return this.nachname;
+    }    
+    
     public String gibVorname()
     {
         return vorname;
