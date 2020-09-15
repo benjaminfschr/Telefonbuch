@@ -13,7 +13,7 @@ public class Telefonbucheintrag
     // Konstruktor
     public Telefonbucheintrag()
     {
-
+        
     }
 
     public String gibVorname()
