@@ -47,23 +47,29 @@ public class Telefonbuch
     
     }
     
-    /** Übergebener Telefonbucheintrag t wird gesucht, ist er gefunden wird der Vorname durch pVorname ersetzt
-    **/
+    /** Übergebener Telefonbucheintrag t wird gesucht (sucheEintrag()), ist er gefunden wird der Vorname durch pVorname ersetzt
+     *  
+     *  Wichtig: Für die methode sucheEintrag wird der nachname benötigt
+     **/
     public void aendereVorname(Telefonbucheintrag t, String pVorname)
     {
         
     }
     
-    /** Übergebener Telefonbucheintrag t wird gesucht, ist er gefunden wird der Vorname durch pNachname ersetzt
-    **/
+    /** Übergebener Telefonbucheintrag t wird gesucht (sucheEintrag()), ist er gefunden wird der Vorname durch pNachname ersetzt
+     *  
+     *  Wichtig: Für die methode sucheEintrag wird der nachname benötigt
+     **/
     public void aendereNachname(Telefonbucheintrag t, String pNachname)
     {
     
     }
     
-    /** Übergebener Telefonbucheintrag t wird gesucht, ist er gefunden wird in der klasse Telefonbucheintrag die Methode
+    /** Übergebener Telefonbucheintrag t wird gesucht (sucheEintrag()), ist er gefunden wird in der klasse Telefonbucheintrag die Methode
       * fuegeNummerHinzu aufgerufen und der parameter pNummer weitergegeben
-    **/
+     *  
+     *  Wichtig: Für die methode sucheEintrag wird der nachname benötigt
+     **/
     public void fuegeNummerHinzu(Telefonbucheintrag t, int pNummer)
     {
     
