@@ -16,6 +16,7 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
         
     }
 
+    /** Implementiert Methode aus ComparableContent, ist der nachname im alphabet weiter hinten wird true zurückgegeben, sonst false**/
         public boolean isGreater (Telefonbucheintrag pContent)
     {
         if(pContent.getContent().compareTo(this.nachname) < 0)
