@@ -24,7 +24,8 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
     
 
 
-    /** Implementiert Methode aus ComparableContent, ist der nachname im alphabet weiter hinten wird true zurückgegeben, sonst false**/
+    /** Implementiert Methode aus ComparableContent, ist der nachname im alphabet weiter hinten wird true zurückgegeben, sonst false
+       **/
 
         public boolean isGreater (Telefonbucheintrag pContent)
     {
@@ -38,6 +39,8 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
         }
     }
     
+    /** Implementiert Methode aus ComparableContent, ist der nachname im alphabet weiter vorne wird true zurückgegeben, sonst false
+       **/
     public boolean isLess (Telefonbucheintrag pContent)
     {
         if(pContent.getContent().compareTo(this.nachname) > 0)
@@ -50,6 +53,8 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
         }
     }
 
+    /** Implementiert methode aus ComparableContent, sind die nachnamen gleich wird true zurückgegeben, sonst false
+       **/
     public boolean isEqual (Telefonbucheintrag pContent)
     {
         if(pContent.getContent().compareTo(this.nachname) == 0)
@@ -62,36 +67,50 @@ public class Telefonbucheintrag implements ComparableContent<Telefonbucheintrag>
         }
     }
     
+    /** Nachname wird zurückgegeben, nur für ComparableContent Methoden 
+       **/
     public String getContent()
     {
         return this.nachname;
     }    
     
+    /** Vorname wird zurückgegeben 
+       **/
     public String gibVorname()
     {
         return vorname;
     }
     
+    /** Nachname wird zurückgegeben 
+       **/
     public String gibNachname()
     {
         return nachname;
     }
     
+    /** Liste mit allen nummern die in diesem Eintrag gespeichert werden wird zurückgegeben
+       **/
     public List<Integer> gibNummern()
     {
         return nummern;
     }
     
+    /** Setter für Vorname 
+       **/
     public void setzeVorname(String vorname)
     {
         this.vorname = vorname;
     }
     
+    /** Setter für Nachname 
+       **/
     public void setzeNachname(String nachname)
     {
         this.nachname = nachname;
     }
     
+    /** Neue Nummer wird an die Liste angehängt, es findet keine Sortierung statt 
+       **/
     public void fuegeNummernHinzu(int pNummer)
     {
         nummern.insert(pNummer);
